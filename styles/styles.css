@@ -7,14 +7,14 @@
   body:before {
     content: "";
     position: fixed;
-    left: -1%;
-    right: -1%;
-    top: -1%;
-    bottom: -1%;
+    left: -5%;
+    right: -5%;
+    top: -5%;
+    bottom: -5%;
     z-index: -1;
 
-    width: 102%;
-    height: 102%;
+    width: 110%;
+    height: 110%;
   }
 
   * {
@@ -25,11 +25,11 @@
     background-color: #907a70;
     background-image: url('../images/pttbckgrnd.jpg');
 
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);  
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);  
 
     background-position: center;
     background-repeat: no-repeat;
