@@ -1,9 +1,15 @@
 body {
-    background-color: lightblue;
+    background-color: #907a70;
   }
-  
-h1 {
-    color: navy;
+
+  h1 {
+    color: #1a1a1a;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  p {
+    color: #2a2025;
     margin-left: 20px;
     text-align: center;
   }
