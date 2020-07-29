@@ -1,6 +1,6 @@
 body {
     background-color: #907a70;
-    background-image: url('pttbckgrnd.jpg') no-repeat center fixed;
+    background-image: url('pttbckgrnd.jpg');
     background-size: cover;
   }
 
