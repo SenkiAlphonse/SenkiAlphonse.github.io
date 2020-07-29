@@ -1,51 +1,44 @@
-  body {
+  body, html {
     margin: auto;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
-  body:before {
-    content: "";
-    position: fixed;
-    left: -5%;
-    right: -5%;
-    z-index: -1;
+  * {
+    box-sizing: border-box;
+  }
 
-    display: block;
-
+  .bg-image {
     background-color: #907a70;
-    background: url('../images/pttbckgrnd.jpg') no-repeat center center fixed;
+    background-image: url('../images/pttbckgrnd.jpg');
+
+    -webkit-filter: blur(8px);
+    filter: blur(8px);  
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    -webkit-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);  
   }
 
-  h1 {
-    color: #27170c;
-    margin-left: 20px;
-    text-align: center;
-  }
-
-  div
-  .container {
-    background-color: whitesmoke; opacity:0.6;
-    border: 3px solid #27170c;
-    padding: 10px;
-    margin: auto;
-    width: 60%;
-  }
   .text-content {
-    margin: auto;
-    width: 90%;
-  }
-
-  p {
+    background-color: #907a70;
+    background-color: ghostwhite; opacity:0.6;
     color: #27170c;
-    margin-left: 20px;
+    border: 3px solid #27170c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
     text-align: center;
+    font-weight: bold;
   }
 
   a {
