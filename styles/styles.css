@@ -4,6 +4,19 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  body:before {
+    content: "";
+    position: fixed;
+    left: -1%;
+    right: -1%;
+    top: -1%;
+    bottom: -1%;
+    z-index: -1;
+
+    width: 102%;
+    height: 102%;
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -12,10 +25,11 @@
     background-color: #907a70;
     background-image: url('../images/pttbckgrnd.jpg');
 
-    -webkit-filter: blur(8px);
-    filter: blur(8px);  
-
-    height: 100%; 
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);  
 
     background-position: center;
     background-repeat: no-repeat;
