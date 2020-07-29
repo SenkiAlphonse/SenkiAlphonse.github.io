@@ -5,21 +5,35 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: 0.5
+  }
+
+  body {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #27170c;
+    padding: 10px;
   }
 
   h1 {
-    color: #1a1a1a;
+    color: #27170c;
     margin-left: 20px;
     text-align: center;
   }
 
   div {
+      margin: auto;
       background-color: whitesmoke; opacity:0.6;
       width: 50%;
   }
 
   p {
-    color: #2a2025;
+    color: #27170c;
     margin-left: 20px;
     text-align: center;
+  }
+
+  a {
+    color: #43701e;
+    font-style: italic;
   }
