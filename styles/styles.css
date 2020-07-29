@@ -1,11 +1,16 @@
 body {
     background-color: #907a70;
+    background-image: url('pttbckgrnd.jpg');
   }
 
   h1 {
     color: #1a1a1a;
     margin-left: 20px;
     text-align: center;
+  }
+
+  div {
+      background-color: whitesmoke; opacity:0.6;
   }
 
   p {
