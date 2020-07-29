@@ -39,19 +39,20 @@
 
   .frost-box {
     background: inherit;
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 500px;
     position: absolute;
     overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 8px;
   }
 
   .frost-box:before {
-    content: ‘’;
-    width: 300px;
-    height: 400px;
+    content: "";
+    width: 400px;
+    height: 550px;
     background: inherit; 
     position: absolute;
     left: -25px;
@@ -75,54 +76,43 @@
     transform: translate(-50%, -50%);
   }
 
-  .header {
-    overflow: hidden;
-    background-color: #907a70;
-    padding: 20px 10px;
+  #mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: ghostwhite;
+    border-radius: 0 5px 5px 0;
   }
 
-  .header a {
-    float: left;
-    color: #27170c;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
+  #mySidenav a:hover {
+    left: 0;
   }
   
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  .header a:hover {
-    background-color: ghostwhite; opacity:0.6;
-    color: #27170c;
-  }
-  
-  .header a.active {
+ #about {
+    top: 20px;
     background-color: #43701e;
-    color: ghostwhite;
+  }
+
+ #blog {
+    top: 80px;
+    background-color: #2b618d;
   }
   
-  .header-right {
-    float: right;
+ #projects {
+    top: 140px;
+    background-color: #8d261e;
   }
   
+  #contact {
+    top: 200px;
+    background-color: #555
+  }
+
   a {
     color: #43701e;
     font-style: italic;
   }
-
-  @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
