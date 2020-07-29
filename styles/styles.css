@@ -1,6 +1,7 @@
 body {
     background-color: #907a70;
-    background-image: url('pttbckgrnd.jpg');
+    background-image: url('pttbckgrnd.jpg') no-repeat center fixed;
+    background-size: cover;
   }
 
   h1 {
@@ -10,7 +11,7 @@ body {
   }
 
   div {
-      background-color: whitesmoke; opacity:0.6;
+      background-color: whitesmoke; opacity:0.4;
   }
 
   p {
