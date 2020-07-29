@@ -6,7 +6,7 @@
 
   body {
     background-color: #907a70;
-    background-image: url('../images/pttbckgrnd.jpg');
+    background-image: url('../images/prplpttbckgrnd.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -15,27 +15,6 @@
   * {
     box-sizing: border-box;
   }
-
-  /* .bg-image {
-    background-color: #907a70;
-    background-image: url('../images/pttbckgrnd.jpg');
-
-    -webkit-filter: blur(8px);
-    -moz-filter: blur(8px);
-    -o-filter: blur(8px);
-    -ms-filter: blur(8px);
-    filter: blur(8px);  
-
-    height: 100%; 
-
-    background-position: center;
-    background-repeat: no-repeat;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } */
 
   .frost-box {
     background: inherit;
@@ -104,7 +83,7 @@
   
  #projects {
     top: 140px;
-    background-color: #8d261e;
+    background-color: #8d1e3a;
   }
   
   #contact {
@@ -115,4 +94,10 @@
   a {
     color: #43701e;
     font-style: italic;
+  }
+
+  #potato-icon {
+    height: 50px;
+    width: 50px;
+    margin: 2em;
   }
