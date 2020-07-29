@@ -1,9 +1,6 @@
 body {
     background-color: #907a70;
     background-image: url('images/pttbckgrnd.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
   }
 
