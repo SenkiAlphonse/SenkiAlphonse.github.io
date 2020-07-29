@@ -14,7 +14,8 @@ html {
   }
 
   div {
-      background-color: whitesmoke; opacity:0.4;
+      background-color: whitesmoke; opacity:0.6;
+      width: 50%;
   }
 
   p {
