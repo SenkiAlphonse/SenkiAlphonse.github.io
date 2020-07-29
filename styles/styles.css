@@ -1,5 +1,9 @@
-body {
-    background: url('../images/pttbckgrnd.jpg') center center cover no-repeat fixed;
+html {
+    background: url('../images/pttbckgrnd.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: #907a70;
   }
 
