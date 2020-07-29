@@ -5,8 +5,10 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-blend-mode: lighten;
-  }
+
+    -webkit-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);  }
 
   body {
     margin: auto;
