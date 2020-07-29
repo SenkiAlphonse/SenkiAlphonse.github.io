@@ -67,7 +67,7 @@
   }
   
   .header a:hover {
-    background-color: ghostwhite;
+    background-color: ghostwhite; opacity:0.6;
     color: #27170c;
   }
   
