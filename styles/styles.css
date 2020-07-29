@@ -11,6 +11,7 @@ html {
   body {
     margin: auto;
     width: 60%;
+    background-color: whitesmoke; opacity:0.6;
     border: 3px solid #27170c;
     padding: 10px;
   }
@@ -23,8 +24,7 @@ html {
 
   div {
       margin: auto;
-      background-color: whitesmoke; opacity:0.6;
-      width: 50%;
+      width: 90%;
   }
 
   p {
