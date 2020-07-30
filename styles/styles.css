@@ -150,15 +150,11 @@
   @media only screen and (min-device-width : 300) and (max-device-width : 767) {
     #welcomeText {
       font-size: 3em;
-      min-width: 450px;
-      min-height: 680px;
       width: 60vw;
       height: 60vh;
     }
 
     #welcomeBox {
-      min-width: 450px;
-      min-height: 680px;
       width: 60vw;
       height: 60vh;
     }
@@ -191,17 +187,13 @@
   @media only screen and (min-device-width : 768) and (max-device-width : 1024) {
     #welcomeText {
       font-size: 3em;
-      min-width: 450px;
-      min-height: 680px;
-      width: 60vw;
-      height: 60vh;
+      width: 50vw;
+      height: 50vh;
     }
 
     #welcomeBox {
-      min-width: 450px;
-      min-height: 680px;
-      width: 60vw;
-      height: 60vh;
+      width: 50vw;
+      height: 50vh;
     }
 
     h1 { 
@@ -228,3 +220,5 @@
       font-weight: 400; 
       line-height: 18.5714px; }
   }
+
+  /* @media only screen and (min-resolution: 264dpi) */
