@@ -139,19 +139,19 @@
     }
   }
 
-  @media only screen and (min-device-pixel-ratio: 360) {
-    #welcomeBox {
-      min-width: 350px;
-      min-height: 500px;
+  @media only screen and (min-resolution: 326dpi) {
+    #welcomeText {
+      font-size: 3em;
+      min-width: 450px;
+      min-height: 680px;
       width: 60vw;
-      height: 60vh;
+      height: 80vw;
     }
 
-    #welcomeText {
-      min-width: 350px;
-      min-height: 500px;
+    #welcomeBox {
+      min-width: 450px;
+      min-height: 680px;
       width: 60vw;
-      height: 60vh;
-      font-size: 3em;
+      height: 80vw;
     }
   }
