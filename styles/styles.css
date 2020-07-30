@@ -161,6 +161,37 @@
       padding-bottom: 24px; } 
   }
 
+@supports not (min-resolution: 264dpi) {
+  @media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
+    #welcomeText {
+      width: 70vw;
+      height: 60vh;
+    }
+
+    #welcomeBox {
+      width: 70vw;
+      height: 60vh;
+    }
+
+    .potato-icon {
+      height: 80px;
+      width: 80px;
+      margin: 2em;
+    }
+
+    h1 { 
+      font-size:46px; 
+      font-weight: 700; 
+      line-height: 50.6px;
+      padding-bottom: 24px; } 
+
+    p {font-size: 24px; 
+      font-weight: 700; 
+      line-height: 34.2857px;
+      padding-bottom: 24px; } 
+  }
+}
+
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (min-resolution: 264dpi) {
     #welcomeText {
       width: 60vw;
@@ -189,3 +220,35 @@
       line-height: 34.2857px;
       padding-bottom: 24px; } 
   }
+
+@supports not (min-resolution: 264dpi) {
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #welcomeText {
+      width: 60vw;
+      height: 50vh;
+    }
+
+    #welcomeBox {
+      width: 60vw;
+      height: 50vh;
+    }
+
+    .potato-icon {
+      height: 80px;
+      width: 80px;
+      margin: 2em;
+    }
+
+    h1 { 
+      font-size:46px; 
+      font-weight: 700; 
+      line-height: 50.6px;
+      padding-bottom: 24px; } 
+
+    p {font-size: 24px; 
+      font-weight: 700; 
+      line-height: 34.2857px;
+      padding-bottom: 24px; } 
+  }
+}
