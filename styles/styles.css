@@ -159,28 +159,28 @@
     }
 
     h1 { 
-      font-size: 28px; 
-      font-weight: 850; 
-      line-height: 52.8px; } 
+      font-size: 56px; 
+      font-weight: 1400; 
+      line-height: 105.6px; } 
     
     h3 {
-      font-size: 24px; 
-      font-weight: 850; 
-      line-height: 30.8px; } 
+      font-size: 48px; 
+      font-weight: 1400; 
+      line-height: 61.6px; } 
     
-    p {font-size: 24px; 
-      font-weight: 500; 
-      line-height: 40px; } 
+    p {font-size: 48px; 
+      font-weight: 900; 
+      line-height: 80px; } 
   
     blockquote { 
-      font-size: 42px; 
-      font-weight: 500; 
-      line-height: 60px; } 
+      font-size: 84px; 
+      font-weight: 900; 
+      line-height: 120px; } 
       
     pre { 
-      font-size: 26px; 
-      font-weight: 400; 
-      line-height: 37.1428px; }
+      font-size: 52px; 
+      font-weight: 800; 
+      line-height: 74.2856px; }
   }
 
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -195,28 +195,28 @@
     }
 
     h1 { 
-      font-size: 28px; 
-      font-weight: 850; 
-      line-height: 52.8px; } 
+      font-size: 56px; 
+      font-weight: 1400; 
+      line-height: 105.6px; } 
     
     h3 {
-      font-size: 24px; 
-      font-weight: 850; 
-      line-height: 30.8px; } 
+      font-size: 48px; 
+      font-weight: 1400; 
+      line-height: 61.6px; } 
     
-    p {font-size: 24px; 
-      font-weight: 500; 
-      line-height: 40px; } 
+    p {font-size: 48px; 
+      font-weight: 900; 
+      line-height: 80px; } 
   
     blockquote { 
-      font-size: 42px; 
-      font-weight: 500; 
-      line-height: 60px; } 
+      font-size: 84px; 
+      font-weight: 900; 
+      line-height: 120px; } 
       
     pre { 
-      font-size: 26px; 
-      font-weight: 400; 
-      line-height: 37.1428px; }
-    }
+      font-size: 52px; 
+      font-weight: 800; 
+      line-height: 74.2856px; }
+  }
 
   /* @media only screen and (min-resolution: 264dpi) */
