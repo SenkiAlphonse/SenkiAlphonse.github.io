@@ -147,7 +147,7 @@
     }
   }
 
-  @media only screen and (min-device-width : 300) and (max-device-width : 767) {
+  @media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
     #welcomeText {
       font-size: 3em;
       width: 60vw;
@@ -184,7 +184,7 @@
       line-height: 18.5714px; }
   }
 
-  @media only screen and (min-device-width : 768) and (max-device-width : 1024) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     #welcomeText {
       font-size: 3em;
       width: 50vw;
