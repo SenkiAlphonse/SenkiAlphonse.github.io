@@ -18,7 +18,7 @@
     place-content: center center;
   }
 
-  .frost-box {
+  .small-container {
     width: 350px;
     height: 500px;
     backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
@@ -27,11 +27,9 @@
   }
 
   .tall-container {
-    height:1000px;
     width:800px;
+    min-height: 100vh;
     backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
-    overflow: hidden;
-    /* background-color:#837377d5; */
   }
 
   .text-content {
@@ -47,7 +45,6 @@
   }
 
   #tallText {
-    height:1000px;
     width:800px;
   }
 
