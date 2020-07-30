@@ -120,16 +120,18 @@
   h1 { 
     font-size: 24px; 
     font-weight: 700; 
-    line-height: 26.4px; }
+    line-height: 26.4px; 
+    padding-bottom: 12px; }
 
   h3 {
     font-size: 14px; 
     font-weight: 700; 
-    line-height: 15.4px; }
+    line-height: 15.4px; 
+    padding-bottom: 6px;}
   
   p {font-size: 14px; 
     font-weight: 400; 
-    line-height: 20px; } 
+    line-height: 20px; }
 
   @media only screen and (hover: none)  {
     .sidenav a {
@@ -158,18 +160,17 @@
       font-size:46px; 
       font-weight: 700; 
       line-height: 50.6px;
-      padding-bottom: 24px; } 
+      padding-bottom: 12px; } 
 
       h3 {
         font-size: 24px; 
         font-weight: 700; 
         line-height: 30px; 
-        padding-bottom: 12px;}
+        padding-bottom: 6px;}
 
     p {font-size: 24px; 
       font-weight: 700; 
-      line-height: 34.2857px;
-      padding-bottom: 24px; } 
+      line-height: 34.2857px; } 
   }
 
 @supports not (min-resolution: 264dpi) {
@@ -194,18 +195,17 @@
       font-size:46px; 
       font-weight: 700; 
       line-height: 50.6px;
-      padding-bottom: 24px; } 
+      padding-bottom: 12px; } 
 
       h3 {
         font-size: 24px; 
         font-weight: 700; 
         line-height: 30px; 
-        padding-bottom: 12px;}
+        padding-bottom: 6px;}
 
     p {font-size: 24px; 
       font-weight: 700; 
-      line-height: 34.2857px;
-      padding-bottom: 24px; }
+      line-height: 34.2857px; }
   }
 }
 
@@ -230,18 +230,17 @@
       font-size:46px; 
       font-weight: 700; 
       line-height: 50.6px;
-      padding-bottom: 24px; } 
+      padding-bottom: 12px; } 
 
-      h3 {
-        font-size: 24px; 
-        font-weight: 700; 
-        line-height: 30px; 
-        padding-bottom: 12px;}
+    h3 {
+      font-size: 24px; 
+      font-weight: 700; 
+      line-height: 30px; 
+      padding-bottom: 6px;}
 
     p {font-size: 24px; 
       font-weight: 700; 
-      line-height: 34.2857px;
-      padding-bottom: 24px; }
+      line-height: 34.2857px; }
   }
 
 @supports not (min-resolution: 264dpi) {
@@ -267,17 +266,16 @@
       font-size:46px; 
       font-weight: 700; 
       line-height: 50.6px;
-      padding-bottom: 24px; } 
+      padding-bottom: 12px; } 
 
-      h3 {
-        font-size: 24px; 
-        font-weight: 700; 
-        line-height: 30px; 
-        padding-bottom: 12px;}
+    h3 {
+      font-size: 24px; 
+      font-weight: 700; 
+      line-height: 30px; 
+      padding-bottom: 6px;}
 
     p {font-size: 24px; 
       font-weight: 700; 
-      line-height: 34.2857px;
-      padding-bottom: 24px; }
+      line-height: 34.2857px; }
   }
 }
