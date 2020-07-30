@@ -132,7 +132,7 @@
     }
   }
 
-  @media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
+  @media only screen and (min-device-width : 300px) and (max-device-width : 767px) and (min-resolution: 264dpi) {
     #welcomeText {
       width: 70vw;
       height: 60vh;
@@ -161,7 +161,7 @@
       padding-bottom: 24px; } 
   }
 
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (min-resolution: 264dpi) {
     #welcomeText {
       width: 60vw;
       height: 50vh;
@@ -189,5 +189,3 @@
       line-height: 34.2857px;
       padding-bottom: 24px; } 
   }
-
-  /* @media only screen and (min-resolution: 264dpi) */
