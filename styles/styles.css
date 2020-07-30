@@ -109,6 +109,14 @@
     margin: 2em;
   }
 
+  #homeboundPotato {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    z-index: 998;
+  }
+
   h1 { 
     font-size: 24px; 
     font-weight: 700; 
