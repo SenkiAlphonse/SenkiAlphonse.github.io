@@ -120,26 +120,11 @@
   h1 { 
     font-size: 24px; 
     font-weight: 700; 
-    line-height: 26.4px; } 
-  
-  h3 {
-    font-size: 14px; 
-    font-weight: 700; 
-    line-height: 15.4px; } 
+    line-height: 26.4px; }
   
   p {font-size: 14px; 
     font-weight: 400; 
     line-height: 20px; } 
-
-  blockquote { 
-    font-size: 21px; 
-    font-weight: 400; 
-    line-height: 30px; } 
-    
-  pre { 
-    font-size: 13px; 
-    font-weight: 400; 
-    line-height: 18.5714px; }
 
   @media only screen and (hover: none)  {
     .sidenav a {
@@ -159,28 +144,14 @@
     }
 
     h1 { 
-      font-size: 56px; 
+      font-size:84px; 
       font-weight: 1400; 
-      line-height: 105.6px; } 
-    
-    h3 {
-      font-size: 48px; 
-      font-weight: 1400; 
-      line-height: 61.6px; } 
-    
-    p {font-size: 48px; 
-      font-weight: 900; 
-      line-height: 80px; } 
-  
-    blockquote { 
-      font-size: 84px; 
-      font-weight: 900; 
-      line-height: 120px; } 
-      
-    pre { 
-      font-size: 52px; 
+      line-height: 158.4px; } 
+
+    p {font-size: 72px; 
       font-weight: 800; 
-      line-height: 74.2856px; }
+      line-height: 86px;
+      padding-bottom: 24px; } 
   }
 
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -195,28 +166,14 @@
     }
 
     h1 { 
-      font-size: 56px; 
+      font-size:84px; 
       font-weight: 1400; 
-      line-height: 105.6px; } 
-    
-    h3 {
-      font-size: 48px; 
-      font-weight: 1400; 
-      line-height: 61.6px; } 
-    
-    p {font-size: 48px; 
-      font-weight: 900; 
-      line-height: 80px; } 
-  
-    blockquote { 
-      font-size: 84px; 
-      font-weight: 900; 
-      line-height: 120px; } 
-      
-    pre { 
-      font-size: 52px; 
+      line-height: 158.4px; } 
+
+    p {font-size: 72px; 
       font-weight: 800; 
-      line-height: 74.2856px; }
+      line-height: 86px;
+      padding-bottom: 24px; } 
   }
 
   /* @media only screen and (min-resolution: 264dpi) */
