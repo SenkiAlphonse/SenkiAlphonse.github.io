@@ -46,18 +46,18 @@
   }
 
   .text-content {
-    text-align: center;
-    font-weight: bold;
     color: #27170c;
     padding: 40px;
   }
 
   #ohiText {
+    text-align: center;
     width: 350px;
     height: 500px;
   }
 
   #lemgthyText {
+    text-align: justify;
     width:800px;
   }
 
@@ -121,6 +121,11 @@
     font-size: 24px; 
     font-weight: 700; 
     line-height: 26.4px; }
+
+  h3 {
+    font-size: 14px; 
+    font-weight: 700; 
+    line-height: 15.4px; }
   
   p {font-size: 14px; 
     font-weight: 400; 
@@ -155,6 +160,12 @@
       line-height: 50.6px;
       padding-bottom: 24px; } 
 
+      h3 {
+        font-size: 24px; 
+        font-weight: 700; 
+        line-height: 30px; 
+        padding-bottom: 12px;}
+
     p {font-size: 24px; 
       font-weight: 700; 
       line-height: 34.2857px;
@@ -185,10 +196,16 @@
       line-height: 50.6px;
       padding-bottom: 24px; } 
 
+      h3 {
+        font-size: 24px; 
+        font-weight: 700; 
+        line-height: 30px; 
+        padding-bottom: 12px;}
+
     p {font-size: 24px; 
       font-weight: 700; 
       line-height: 34.2857px;
-      padding-bottom: 24px; } 
+      padding-bottom: 24px; }
   }
 }
 
@@ -215,10 +232,16 @@
       line-height: 50.6px;
       padding-bottom: 24px; } 
 
+      h3 {
+        font-size: 24px; 
+        font-weight: 700; 
+        line-height: 30px; 
+        padding-bottom: 12px;}
+
     p {font-size: 24px; 
       font-weight: 700; 
       line-height: 34.2857px;
-      padding-bottom: 24px; } 
+      padding-bottom: 24px; }
   }
 
 @supports not (min-resolution: 264dpi) {
@@ -246,9 +269,15 @@
       line-height: 50.6px;
       padding-bottom: 24px; } 
 
+      h3 {
+        font-size: 24px; 
+        font-weight: 700; 
+        line-height: 30px; 
+        padding-bottom: 12px;}
+
     p {font-size: 24px; 
       font-weight: 700; 
       line-height: 34.2857px;
-      padding-bottom: 24px; } 
+      padding-bottom: 24px; }
   }
 }
