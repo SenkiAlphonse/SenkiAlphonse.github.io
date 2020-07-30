@@ -143,14 +143,21 @@
       height: 60vh;
     }
 
-    h1 { 
-      font-size:84px; 
-      font-weight: 1400; 
-      line-height: 158.4px; } 
+    .potato-icon {
+      height: 80px;
+      width: 80px;
+      margin: 2em;
+    }
 
-    p {font-size: 72px; 
-      font-weight: 800; 
-      line-height: 86px;
+    h1 { 
+      font-size:46px; 
+      font-weight: 700; 
+      line-height: 50.6px;
+      padding-bottom: 24px; } 
+
+    p {font-size: 24px; 
+      font-weight: 700; 
+      line-height: 34.2857px;
       padding-bottom: 24px; } 
   }
 
@@ -165,14 +172,21 @@
       height: 50vh;
     }
 
-    h1 { 
-      font-size:84px; 
-      font-weight: 1400; 
-      line-height: 158.4px; } 
+    .potato-icon {
+      height: 80px;
+      width: 80px;
+      margin: 2em;
+    }
 
-    p {font-size: 72px; 
-      font-weight: 800; 
-      line-height: 86px;
+    h1 { 
+      font-size:46px; 
+      font-weight: 700; 
+      line-height: 50.6px;
+      padding-bottom: 24px; } 
+
+    p {font-size: 24px; 
+      font-weight: 700; 
+      line-height: 34.2857px;
       padding-bottom: 24px; } 
   }
 
