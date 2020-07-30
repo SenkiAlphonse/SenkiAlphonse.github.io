@@ -66,24 +66,23 @@
   }
 
   .text-input {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding:6px;
     margin-top: 6px;
     margin-bottom: 6px;
     width: 18em;  
     height: 2em;
     background-color: rgba(255,255,255,0.5);
     
-    border-top-color: rgba(255, 255, 255);
-    border-left-color: rgba(255,255,255);
-    border-bottom-color: rgba(153, 153, 153, 0.5);
-    border-right-color: rgba(153, 153, 153, 0.5);
+    border: none;
   }
 
   .submit-button {
     width: 8em;  
     height: 2em;
     margin: 6px;
+    background-color: #43701e;
+    border: 2px solid #3153164f;
+    border-radius: 8px
   }
 
   .sidenav a {
