@@ -16,15 +16,28 @@
 
     <div class="container" id="ohiBox">
         <div class="text-content" id="ohiText">
-            <h1>Hello WorlD</h1>
-            <p>Backend dev meets css... it does not end too well</p>
-            <p>
-                Icon made by <a class="random-link" href="https://www.flaticon.com/authors/freepik"
-                    title="Freepik">Freepik</a> from <a class="random-link" href="https://www.flaticon.com/"
-                    title="Flaticon">
-                    www.flaticon.com</a>
-            </p>
-            <p><img class="potato-icon" id="indexPotato" src="images/potato-icon.png" alt="PotatoDear"></p>
+            <div>
+                <h1>Hello WorlD</h1>
+                <p>Backend dev meets css... it does not end too well</p>
+                <p>
+                    Icon made by <a class="random-link" href="https://www.flaticon.com/authors/freepik"
+                        title="Freepik">Freepik</a> from <a class="random-link" href="https://www.flaticon.com/"
+                        title="Flaticon">
+                        www.flaticon.com</a>
+                </p>
+            </div>
+            <div>
+                <form action="/my.fab.backend/user/save" method="post">
+                    <input type="text" class="text-input" id="welcomeFormUsername" name="username"
+                        placeholder="Username..."><br>
+                    <input type="text" class="text-input" id="welcomeFormMood" name="usermood"
+                        placeholder="Mood..."><br>
+                    <input type="submit" class="submit-button" id="welcomeFormGoButton" value="Go">
+                </form>
+            </div>
+            <div>
+                <p><img class="potato-icon" id="indexPotato" src="images/potato-icon.png" alt="PotatoDear"></p>
+            </div>
         </div>
     </div>
 
