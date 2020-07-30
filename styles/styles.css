@@ -20,19 +20,29 @@
     place-content: center center;
   }
 
-  .small-container {
-    width: 350px;
-    height: 500px;
+  .container {
+    background-color: rgba(255,255,255,0.3);
     backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
-    border-radius: 8px;
-    overflow: hidden;
   }
 
-  .tall-container {
+  @supports (backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%)) {
+    .container {
+      background-color: rgba(255,255,255,0.0);
+      backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
+    }
+  }
+
+
+  #welcomeBox {
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+  }
+
+  #tallContainer {
     width:800px;
     margin: auto;
     min-height: 100vh;
-    backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
   }
 
   .text-content {
@@ -99,8 +109,12 @@
     margin: 2em;
   }
 
-  @media only screen and (max-width: 896px)  {
+  @media only screen and (hover: none)  {
     .sidenav a {
       left: 0;
     }
   }
+
+/*   @media only screen and (max-width: 896px) {
+
+  } */
