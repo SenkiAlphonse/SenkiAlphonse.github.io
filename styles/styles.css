@@ -152,15 +152,15 @@
       font-size: 3em;
       min-width: 450px;
       min-height: 680px;
-      width: 80vw;
-      height: 80vh;
+      width: 60vw;
+      height: 60vh;
     }
 
     #welcomeBox {
       min-width: 450px;
       min-height: 680px;
-      width: 80vw;
-      height: 80vh;
+      width: 60vw;
+      height: 60vh;
     }
 
     h1 { 
