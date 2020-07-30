@@ -147,7 +147,7 @@
     }
   }
 
-  @media only screen and (min-resolution: 227dpi) {
+  @media only screen and (min-resolution: 193dpi) {
     #welcomeText {
       font-size: 3em;
       min-width: 450px;
