@@ -13,7 +13,9 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+  }
 
+  .ohi-body {
     display: grid;
     place-content: center center;
   }
@@ -28,6 +30,7 @@
 
   .tall-container {
     width:800px;
+    margin: auto;
     min-height: 100vh;
     backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
   }
