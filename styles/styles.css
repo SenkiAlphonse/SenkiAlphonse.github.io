@@ -33,13 +33,13 @@
     }
   }
 
-  #welcomeBox {
+  #ohiBox {
     width: 350px;
     height: 500px;
     border-radius: 8px;
   }
 
-  #tallContainer {
+  #lemgthyContainer {
     width:800px;
     margin: auto;
     min-height: 100vh;
@@ -52,12 +52,12 @@
     padding: 40px;
   }
 
-  #welcomeText {
+  #ohiText {
     width: 350px;
     height: 500px;
   }
 
-  #tallText {
+  #lemgthyText {
     width:800px;
   }
 
@@ -133,12 +133,12 @@
   }
 
   @media only screen and (min-device-width : 300px) and (max-device-width : 767px) and (min-resolution: 264dpi) {
-    #welcomeText {
+    #ohiBox {
       width: 70vw;
       height: 60vh;
     }
 
-    #welcomeBox {
+    #ohiText {
       width: 70vw;
       height: 60vh;
     }
@@ -163,12 +163,12 @@
 
 @supports not (min-resolution: 264dpi) {
   @media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
-    #welcomeText {
+    #ohiBox {
       width: 70vw;
       height: 60vh;
     }
 
-    #welcomeBox {
+    #ohiText {
       width: 70vw;
       height: 60vh;
     }
@@ -193,12 +193,12 @@
 }
 
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (min-resolution: 264dpi) {
-    #welcomeText {
+    #ohiBox {
       width: 60vw;
       height: 50vh;
     }
 
-    #welcomeBox {
+    #ohiText {
       width: 60vw;
       height: 50vh;
     }
