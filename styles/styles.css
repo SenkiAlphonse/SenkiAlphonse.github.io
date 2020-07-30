@@ -27,7 +27,7 @@
 
   @supports (backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%)) {
     .container {
-      background-color: rgba(255,255,255,0.0);
+      background-color: rgba(255,255,255,0.2);
       backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
     }
   }
