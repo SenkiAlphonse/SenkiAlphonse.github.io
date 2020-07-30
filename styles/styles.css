@@ -15,7 +15,7 @@
     background-size: cover;
 
     display: grid;
-    place-items: center center;
+    place-content: center center;
   }
 
   .frost-box {
