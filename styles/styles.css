@@ -159,7 +159,7 @@
     #welcomeBox {
       min-width: 450px;
       min-height: 680px;
-      width: 60vw;
-      height: 80vw;
+      width: 80vw;
+      height: 80vh;
     }
   }
