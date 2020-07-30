@@ -52,7 +52,7 @@
   }
 
   .sidenav a {
-    position: absolute;
+    position: fixed;
     left: -80px;
     transition: 0.3s;
     padding: 15px;
