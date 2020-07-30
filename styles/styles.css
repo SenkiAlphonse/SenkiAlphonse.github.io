@@ -29,7 +29,7 @@
   @supports (backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%)) {
     .container {
       background-color: rgba(255,255,255,0.1);
-      backdrop-filter: blur(14px) contrast(70%) brightness(140%) grayscale(30%);
+      backdrop-filter: blur(14px) contrast(60%) brightness(140%) grayscale(30%);
     }
   }
 
@@ -46,7 +46,7 @@
   }
 
   .text-content {
-    color: #27170c;
+    color: #140a0d;
     padding: 40px;
   }
 
