@@ -47,7 +47,7 @@
 
   .text-content {
     color: #140a0d;
-    padding: 40px;
+    padding: 5vw;
   }
 
   #ohiText {
@@ -164,6 +164,7 @@
   }
  
   @media only screen and (min-device-width : 300px) and (max-device-width : 767px) and (min-resolution: 264dpi) {
+
     #ohiBox {
       width: 70vw;
       height: 60vh;
