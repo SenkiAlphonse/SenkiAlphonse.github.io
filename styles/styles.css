@@ -207,25 +207,29 @@
     z-index: 998;
   }*/
 
-    #ohiBox {
-      width: 70vw;
-      height: 60vh;
-    }
+  .text-content {
+    padding-top: 60px;
+  }
+  
+  #ohiBox {
+    width: 70vw;
+    height: 60vh;
+  }
 
-    #ohiText {
-      width: 70vw;
-      height: 60vh;
-    }
+  #ohiText {
+    width: 70vw;
+    height: 60vh;
+  }
 
-    #lemgthyContainer {
-      width:80vw;
-      margin: auto;
-      min-height: 100vh;
-    }
+  #lemgthyContainer {
+    width:80vw;
+    margin: auto;
+    min-height: 100vh;
+  }
 
-    #lemgthyText {
-      width:80vw;
-    }
+  #lemgthyText {
+    width:80vw;
+  }
   }
 
 @supports not (min-resolution: 264dpi) {
@@ -281,7 +285,7 @@
   }*/
     
     .text-content {
-      padding-top: 40px;
+      padding-top: 60px;
     }
     
     #ohiBox {
