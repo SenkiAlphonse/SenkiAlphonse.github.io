@@ -188,6 +188,10 @@
 
 @supports not (min-resolution: 264dpi) {
   @media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
+    .text-content {
+      padding-top: 24px;
+    }
+    
     #ohiBox {
       width: 70vw;
       height: 60vh;
