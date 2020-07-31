@@ -184,7 +184,7 @@
       width:80vw;
     }
   }
-/*
+
 @supports not (min-resolution: 264dpi) {
   @media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
     #ohiBox {
@@ -197,30 +197,20 @@
       height: 60vh;
     }
 
-    .potato-icon {
-      height: 80px;
-      width: 80px;
-      margin: 0;
+    #lemgthyContainer {
+      width:80vw;
+      margin: auto;
+      min-height: 100vh;
     }
 
-    h1 { 
-      font-size:46px; 
-      font-weight: 700; 
-      line-height: 50.6px;
-      padding-bottom: 12px; } 
-
-      h3 {
-        font-size: 24px; 
-        font-weight: 700; 
-        line-height: 30px; 
-        padding-bottom: 6px;}
-
-    p {font-size: 24px; 
-      font-weight: 700; 
-      line-height: 34.2857px; }
+    #lemgthyText {
+      width:80vw;
+    }
   }
 }
 
+
+/*
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (min-resolution: 264dpi) {
     #ohiBox {
       width: 60vw;
