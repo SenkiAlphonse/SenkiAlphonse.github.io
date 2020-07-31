@@ -233,6 +233,9 @@
   #lemgthyText {
     width:80vw;
   }
+  body {
+    background-size: 100vh;
+  }
   }
 
 @supports not (min-resolution: 264dpi) {
@@ -309,6 +312,10 @@
 
     #lemgthyText {
       width:80vw;
+    }
+
+    body {
+      background-size: 100vh;
     }
   }
 }
