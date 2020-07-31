@@ -47,18 +47,20 @@
 
   .text-content {
     color: #140a0d;
-    padding: 5vw;
   }
 
   #ohiText {
     text-align: center;
     width: 350px;
     height: 500px;
+    padding: 3vw;
+
   }
 
   #lemgthyText {
     text-align: justify;
     width:60vw;
+    padding: 5vw;
   }
 
   #welcomeForm {
