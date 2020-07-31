@@ -236,6 +236,8 @@
 
   body {
     background-size: auto 100vh;
+    background-position-y: top;
+    background-attachment: fixed;
   }
   }
 
@@ -317,6 +319,8 @@
 
     body {
       background-size: auto 100vh;
+      background-position-y: top;
+      background-attachment: fixed;
     }
   }
 }
