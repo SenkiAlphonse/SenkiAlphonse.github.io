@@ -57,10 +57,8 @@
     padding: 3vw;
   }
 
-  .abcRioButtonContentWrapper {
+  .abcRioButton {
     margin: auto;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
   }
 
   #lemgthyText {
