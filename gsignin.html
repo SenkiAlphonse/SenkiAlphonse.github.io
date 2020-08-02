@@ -43,7 +43,7 @@
             <div>
                 <a class="random-link" id="signoutLink" href="#" onclick="signOut();">Sign out</a>
                 <script>
-                    document.getElementById("signoutLink").style.display = signedIn ? "block" : "none";
+                    document.getElementById("signoutLink").style.display = GoogleAuth.isSignedIn.get() ? "block" : "none";
                     function signOut() {
                         var auth2 = gapi.auth2.getAuthInstance();
                         auth2.signOut().then(function () {
