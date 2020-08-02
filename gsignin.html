@@ -25,9 +25,9 @@
                 <p id=displayUsername>Not logged in</p>
             </div>
 
-            <div class="g-signin2" data-onsuccess="onSuccess"></div>
+            <div class="g-signin2" id="signinButton" data-onsuccess="onSuccess"></div>
             <script>
-                document.getElementsByClassName("g-signin2").style.display = GoogleAuth.isSignedIn.get() ? "none" : "block";
+                document.getElementById("signinButton").style.display = GoogleAuth.isSignedIn.get() ? "none" : "block";
                 function onSuccess(googleUser) {
                     var profile = googleUser.getBasicProfile();
                     console.log('Logged in as: ' + profile.getName());
@@ -36,7 +36,7 @@
                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
                     document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
                     document.getElementById("signoutLink").style.display = "block";
-                    document.getElementsByClassName("g-signin2").style.display = "none";
+                    document.getElementById("signinButton").style.display = "none";
                 }
             </script>
 
@@ -51,7 +51,7 @@
                             console.log('User signed out.');
                         });
                         document.getElementById("signoutLink").style.display = "none";
-                        document.getElementsByClassName("g-signin2").style.display = "block";
+                        document.getElementById("signinButton").style.display = "block";
                     }
                 </script>
             </div>
