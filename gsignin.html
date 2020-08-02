@@ -12,7 +12,7 @@
     <title>G-signin</title>
 </head>
 
-<body>
+<body class="ohi-body">
     <div id="indexSidenav" class="sidenav">
         <a href="about.html" class="about">About</a>
         <a href="#" class="blog">Blog</a>
@@ -29,7 +29,7 @@
                     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
                     console.log('Image URL: ' + profile.getImageUrl());
                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-                    document.getElementById("displayUsername").innerHTML = "Hello" + profile.getName();
+                    document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
                 }
             </script>
         </div>
@@ -47,9 +47,10 @@
             </script>
         </div>
     </div>
-
-    <div class="text-content" id="gsigninWelcome">
-        <p id=displayUsername>Not logged in</p>
+    <div class="container" id="ohiBox">
+        <div class="text-content" id="gsigninWelcome">
+            <p id=displayUsername>Not logged in</p>
+        </div>
     </div>
 
     <div class="homeButton">

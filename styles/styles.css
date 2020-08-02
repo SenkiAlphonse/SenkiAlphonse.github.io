@@ -66,6 +66,9 @@
 
   #gsigninWelcome {
     text-align: center;
+    width: 350px;
+    height: 500px;
+    padding: 3vw;
   }
 
   #welcomeForm {
