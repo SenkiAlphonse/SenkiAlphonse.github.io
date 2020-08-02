@@ -130,6 +130,16 @@
     font-style: italic;
   }
 
+  #gsignout {
+    left: 0;
+    top: 260px;
+  }
+
+  .g-signin2 {
+    left: 0;
+    top: 320px;
+  }
+
   .potato-icon {
     height: 50px;
     width: 50px;
