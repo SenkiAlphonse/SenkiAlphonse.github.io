@@ -30,7 +30,7 @@
                     console.log('Image URL: ' + profile.getImageUrl());
                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
                     document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
-                    document.getElementById("signoutLink").style.visibility = "block";
+                    document.getElementById("signoutLink").style.display = "block";
                 }
             </script>
         </div>
@@ -49,7 +49,7 @@
                             document.getElementById("displayUsername").innerHTML = "Not logged in";
                             console.log('User signed out.');
                         });
-                        document.getElementById("signoutLink").style.visibility = "block";
+                        document.getElementById("signoutLink").style.display = "none";
                     }
                 </script>
             </div>
