@@ -50,18 +50,17 @@
 
         <div>
             <a class="random-link" id="gsignout" href="#" onclick="signOut();">Sign out</a>
+            <script>
+                function signOut() {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function () {
+                        console.log('User signed out.');
+                    });
+                }
+            </script>
         </div>
 
     </div>
-    <script>
-        function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                console.log('User signed out.');
-            });
-        }
-    </script>
-
     <div class="homeButton">
         <p>
             <a class="random-link" href="index.html"><img class="potato-icon" id="homeboundPotato"
