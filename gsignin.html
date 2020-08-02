@@ -30,26 +30,29 @@
                     console.log('Image URL: ' + profile.getImageUrl());
                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
                     document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
-                }
-            </script>
-        </div>
-
-        <div>
-            <a class="random-link" href="#" onclick="signOut();">Sign out</a>
-            <script>
-                function signOut() {
-                    var auth2 = gapi.auth2.getAuthInstance();
-                    auth2.signOut().then(function () {
-                        document.getElementById("displayUsername").innerHTML = "Not logged in";
-                        console.log('User signed out.');
-                    });
+                    document.getElementById("signoutLink").style.visibility = "block";
                 }
             </script>
         </div>
     </div>
     <div class="container" id="ohiBox">
         <div class="text-content" id="gsigninWelcome">
-            <p id=displayUsername>Not logged in</p>
+            <div>
+                <p id=displayUsername>Not logged in</p>
+            </div>
+            <div>
+                <a class="random-link" id="signoutLink" href="#" onclick="signOut();">Sign out</a>
+                <script>
+                    function signOut() {
+                        var auth2 = gapi.auth2.getAuthInstance();
+                        auth2.signOut().then(function () {
+                            document.getElementById("displayUsername").innerHTML = "Not logged in";
+                            console.log('User signed out.');
+                        });
+                        document.getElementById("signoutLink").style.visibility = "block";
+                    }
+                </script>
+            </div>
         </div>
     </div>
 
