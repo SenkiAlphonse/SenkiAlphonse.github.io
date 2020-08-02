@@ -99,6 +99,7 @@
     position: fixed;
     left: 0;
     top: 260px;
+    z-index: 666;
   }
 
   .sidenav a {

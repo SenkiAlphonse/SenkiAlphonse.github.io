@@ -24,6 +24,7 @@
             <div class="g-signin2" data-onsuccess="onSuccess"></div>
             <script>
                 var signedIn = false;
+                document.getElementById("g-signin2").style.display = signedIn ? "none" : "block";
                 function onSuccess(googleUser) {
                     var profile = googleUser.getBasicProfile();
                     signedIn = true;
@@ -33,6 +34,7 @@
                     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
                     document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
                     document.getElementById("signoutLink").style.display = "block";
+                    document.getElementById("g-signin2").style.display = "none;"
                 }
             </script>
         </div>
@@ -54,6 +56,8 @@
                         });
                         signedIn = false;
                         document.getElementById("signoutLink").style.display = "none";
+                        document.getElementById("g-signin2").style.display = "block;"
+
                     }
                 </script>
             </div>
