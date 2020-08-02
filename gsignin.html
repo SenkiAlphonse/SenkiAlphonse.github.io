@@ -23,9 +23,10 @@
         <div>
             <div class="g-signin2" data-onsuccess="onSuccess"></div>
             <script>
+                var signedIn = false;
                 function onSuccess(googleUser) {
                     var profile = googleUser.getBasicProfile();
-                    var signedIn = true;
+                    signedIn = true;
                     console.log('Logged in as: ' + profile.getName());
                     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
                     console.log('Image URL: ' + profile.getImageUrl());
@@ -44,6 +45,7 @@
             <div>
                 <a class="random-link" id="signoutLink" href="#" onclick="signOut();">Sign out</a>
                 <script>
+                    document.getElementById("signoutLink").style.display = signedIn ? "block" : "none";
                     function signOut() {
                         var auth2 = gapi.auth2.getAuthInstance();
                         auth2.signOut().then(function () {
