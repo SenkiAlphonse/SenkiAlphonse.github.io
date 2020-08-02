@@ -64,6 +64,10 @@
     padding: 5vw;
   }
 
+  #gsigninWelcome {
+    text-align: center;
+  }
+
   #welcomeForm {
     margin-bottom: 12px;
   }
