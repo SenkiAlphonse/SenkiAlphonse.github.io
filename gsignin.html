@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+        content="797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com">
+    <title>G-signin</title>
+</head>
+
+<body>
+    <div id="indexSidenav" class="sidenav">
+        <a href="about.html" class="about">About</a>
+        <a href="#" class="blog">Blog</a>
+        <a href="#" class="projects">Projects</a>
+        <a href="#" class="contact">Contact</a>
+    </div>
+
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+    </script>
+
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+
+    <div class="homeButton">
+        <p>
+            <a class="random-link" href="index.html"><img class="potato-icon" id="homeboundPotato"
+                    src="images/potato-icon.png" alt="PotatoDear">
+            </a>
+        </p>
+    </div>
+
+</body>
+
+</html>
