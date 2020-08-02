@@ -19,7 +19,7 @@
         <a href="#" class="projects">Projects</a>
         <a href="#" class="contact">Contact</a>
     </div>
-    <div class="gsignin">
+    <div class="gsignin-container">
         <div>
             <div class="g-signin2" data-onsuccess="onSuccess"></div>
             <script>
@@ -34,7 +34,7 @@
         </div>
 
         <div>
-            <a class="random-link" id="gsignout" href="#" onclick="signOut();">Sign out</a>
+            <a class="random-link" href="#" onclick="signOut();">Sign out</a>
             <script>
                 function signOut() {
                     var auth2 = gapi.auth2.getAuthInstance();
