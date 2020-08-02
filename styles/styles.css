@@ -130,12 +130,7 @@
     font-style: italic;
   }
 
-  #gsignout {
-    left: 0;
-    top: 320px;
-  }
-
-  .my-signin2 {
+  .gsignin {
     left: 0;
     top: 260px;
   }
