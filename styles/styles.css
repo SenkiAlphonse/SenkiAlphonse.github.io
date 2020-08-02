@@ -144,6 +144,14 @@
     font-weight: bolder;
   }
 
+  #signoutLink[signedIn=true] {
+    display: block;
+  }
+
+  #signoutLink[signedIn=false] {
+    display: none;
+  }
+
   .potato-icon {
     height: 50px;
     width: 50px;

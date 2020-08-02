@@ -25,6 +25,7 @@
             <script>
                 function onSuccess(googleUser) {
                     var profile = googleUser.getBasicProfile();
+                    var signedIn = true;
                     console.log('Logged in as: ' + profile.getName());
                     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
                     console.log('Image URL: ' + profile.getImageUrl());
@@ -49,6 +50,7 @@
                             document.getElementById("displayUsername").innerHTML = "Not logged in";
                             console.log('User signed out.');
                         });
+                        signedIn = false;
                         document.getElementById("signoutLink").style.display = "none";
                     }
                 </script>
