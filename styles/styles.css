@@ -57,11 +57,8 @@
     padding: 3vw;
   }
 
-  .abcRioButton {
-    margin: auto
-  }
-
-  .g-signin2 {
+  .abcRioButtonContentWrapper {
+    margin: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
   }
