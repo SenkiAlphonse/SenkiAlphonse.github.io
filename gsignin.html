@@ -27,7 +27,7 @@
 
             <div class="g-signin2" data-onsuccess="onSuccess"></div>
             <script>
-                document.getElementById("gsigninContainer").style.display = "block";
+                document.getElementById("gsigninContainer").style.display = GoogleAuth.isSignedIn.get() ? "none" : "block";
                 function onSuccess(googleUser) {
                     var profile = googleUser.getBasicProfile();
                     console.log('Logged in as: ' + profile.getName());
