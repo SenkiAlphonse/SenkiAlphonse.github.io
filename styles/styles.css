@@ -241,7 +241,7 @@
     height: 60vh;
   }
 
-  #ohiText {
+  #ohiText, #gsigninWelcome {
     width: 70vw;
     height: 60vh;
   }
@@ -318,7 +318,7 @@
       height: 60vh;
     }
 
-    #ohiText {
+    #ohiText, #gsigninWelcome {
       width: 70vw;
       height: 60vh;
     }
