@@ -42,24 +42,24 @@
                     }
                 </script>
             </div>
-        </div>
-        <div id="gsigninContainer">
-            <div>
-                <div class="g-signin2" data-onsuccess="onSuccess"></div>
-                <script>
-                    document.getElementById("gsigninContainer").style.display = signedIn ? "none" : "block";
-                    function onSuccess(googleUser) {
-                        var profile = googleUser.getBasicProfile();
-                        signedIn = true;
-                        console.log('Logged in as: ' + profile.getName());
-                        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-                        console.log('Image URL: ' + profile.getImageUrl());
-                        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-                        document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
-                        document.getElementById("signoutLink").style.display = "block";
-                        document.getElementById("gsigninContainer").style.display = "none;"
-                    }
-                </script>
+            <div id="gsigninContainer">
+                <div>
+                    <div class="g-signin2" data-onsuccess="onSuccess"></div>
+                    <script>
+                        document.getElementById("gsigninContainer").style.display = signedIn ? "none" : "block";
+                        function onSuccess(googleUser) {
+                            var profile = googleUser.getBasicProfile();
+                            signedIn = true;
+                            console.log('Logged in as: ' + profile.getName());
+                            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                            console.log('Image URL: ' + profile.getImageUrl());
+                            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                            document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
+                            document.getElementById("signoutLink").style.display = "block";
+                            document.getElementById("gsigninContainer").style.display = "none;"
+                        }
+                    </script>
+                </div>
             </div>
         </div>
     </div>
