@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
     <meta name="google-signin-client_id"
         content="797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com">
     <title>G-signin</title>
@@ -27,6 +27,9 @@
 
             <div class="g-signin2" id="signinButton" data-onsuccess="onSuccess"></div>
             <script>
+                gapi.auth2.init({
+                    client_id: '797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com'
+                });
                 document.getElementById("signinButton").style.display = GoogleAuth.isSignedIn.get() ? "none" : "block";
                 function onSuccess(googleUser) {
                     var profile = googleUser.getBasicProfile();
