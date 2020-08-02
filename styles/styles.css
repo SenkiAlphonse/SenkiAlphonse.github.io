@@ -57,6 +57,11 @@
     padding: 3vw;
   }
 
+  .g-signin2 {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+
   .abcRioButton {
     margin: auto;
   }
