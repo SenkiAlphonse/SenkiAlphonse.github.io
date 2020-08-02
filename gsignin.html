@@ -21,14 +21,43 @@
     </div>
     <div class="container" id="ohiBox">
         <div class="text-content" id="gsigninWelcome">
+            <script>var signedIn = false;</script>
             <div>
                 <p id=displayUsername>Not logged in</p>
             </div>
 
             <div class="g-signin2" data-onsuccess="onSuccess"></div>
+            <script>
+                document.getElementById("gsigninContainer").style.display = signedIn ? "none" : "block";
+                function onSuccess(googleUser) {
+                    var profile = googleUser.getBasicProfile();
+                    signedIn = true;
+                    console.log('Logged in as: ' + profile.getName());
+                    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                    console.log('Image URL: ' + profile.getImageUrl());
+                    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                    document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
+                    document.getElementById("signoutLink").style.display = "block";
+                    document.getElementById("gsigninContainer").style.display = "none";
+                }
+            </script>
 
             <div>
                 <a class="random-link" id="signoutLink" href="#" onclick="signOut();">Sign out</a>
+                <script>
+                    document.getElementById("signoutLink").style.display = signedIn ? "block" : "none";
+                    function signOut() {
+                        var auth2 = gapi.auth2.getAuthInstance();
+                        auth2.signOut().then(function () {
+                            document.getElementById("displayUsername").innerHTML = "Not logged in";
+                            console.log('User signed out.');
+                        });
+                        signedIn = false;
+                        document.getElementById("signoutLink").style.display = "none";
+                        document.getElementById("gsigninContainer").style.display = "block";
+
+                    }
+                </script>
             </div>
         </div>
     </div>
@@ -41,34 +70,6 @@
         </p>
     </div>
 
-    <script>
-        var signedIn = false;
-        document.getElementById("gsigninContainer").style.display = signedIn ? "none" : "block";
-        document.getElementById("signoutLink").style.display = signedIn ? "block" : "none";
-
-        function onSuccess(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            signedIn = true;
-            console.log('Logged in as: ' + profile.getName());
-            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-            document.getElementById("displayUsername").innerHTML = "Hello " + profile.getName();
-            document.getElementById("signoutLink").style.display = "block";
-            document.getElementById("gsigninContainer").style.display = "none";
-        }
-
-        function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                document.getElementById("displayUsername").innerHTML = "Not logged in";
-                console.log('User signed out.');
-            });
-            signedIn = false;
-            document.getElementById("signoutLink").style.display = "none";
-            document.getElementById("gsigninContainer").style.display = "block";
-        }
-    </script>
 </body>
 
 </html>
