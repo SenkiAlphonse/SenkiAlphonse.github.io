@@ -31,9 +31,7 @@
                 function init() {
                     gapi.load('auth2', function () {
 
-                        myAuth2 = gapi.auth2.init({
-                            client_id: '797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com'
-                        })
+                        myAuth2 = gapi.auth2.init()
 
                         myAuth2.then(onInit, onError);
 
