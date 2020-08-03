@@ -28,24 +28,27 @@
             <div class="g-signin2" id="signinButton" data-onsuccess="onSuccess"></div>
             <script>
 
-                gapi.load('auth2', function () {
-                    var isSignedIn = auth2.isSignedIn.get();
-                    gauth = gapi.auth2.init({
-                        client_id: '797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com'
-                    })
-                    gauth.then(onInit(), onError());
-                    function onInit() {
-                        document.getElementById("signinButton").style.display = isSignedIn ? "none" : "block";
-                        document.getElementById("signoutLink").style.display = isSignedIn ? "block" : "none";
-                    }
+                function init() {
+                    gapi.load('auth2', function () {
+                        var isSignedIn = auth2.isSignedIn.get();
 
-                    function onError() {
-                        console.log("Failed to initialize GoogleAuth");
-                        document.getElementById("signinButton").style.display = "block";
-                        document.getElementById("signoutLink").style.display = "none";
-                    }
+                        gauth = gapi.auth2.init({
+                            client_id: '797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com'
+                        })
 
-                })
+                        gauth.then(onInit(), onError());
+                        function onInit() {
+                            document.getElementById("signinButton").style.display = isSignedIn ? "none" : "block";
+                            document.getElementById("signoutLink").style.display = isSignedIn ? "block" : "none";
+                        }
+
+                        function onError() {
+                            console.log("Failed to initialize GoogleAuth");
+                            document.getElementById("signinButton").style.display = "block";
+                            document.getElementById("signoutLink").style.display = "none";
+                        }
+                    });
+                }
 
                 //document.getElementById("signinButton").style.display = GoogleAuth.isSignedIn.get() ? "none" : "block";
                 function onSuccess(googleUser) {
