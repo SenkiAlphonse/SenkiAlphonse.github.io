@@ -35,16 +35,17 @@
                             client_id: '797121040974-om85ht6lbbjqa3qqtif2f4b8p00i1g4m.apps.googleusercontent.com'
                         })
 
-                        var isSignedIn = myAuth2.isSignedIn.get();
+                        myAuth2.then(onInit, onError);
 
-                        myAuth2.then(onInit(), onError());
-                        function onInit() {
+                        function onInit(googleAuth) {
+                            var isSignedIn = googleAuth.isSignedIn.get();
+
                             document.getElementById("signinButton").style.display = isSignedIn ? "none" : "block";
                             document.getElementById("signoutLink").style.display = isSignedIn ? "block" : "none";
                         }
 
-                        function onError() {
-                            console.log("Failed to initialize GoogleAuth");
+                        function onError(error) {
+                            console.log("Failed to initialize GoogleAuth: {}");
                             document.getElementById("signinButton").style.display = "block";
                             document.getElementById("signoutLink").style.display = "none";
                         }
