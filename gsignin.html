@@ -45,7 +45,7 @@
                         }
 
                         function onError(error) {
-                            console.log("Failed to initialize GoogleAuth: {}", error.message);
+                            console.log("Failed to initialize GoogleAuth: {}", error.error.message);
                             document.getElementById("signinButton").style.display = "block";
                             document.getElementById("signoutLink").style.display = "none";
                         }
