@@ -37,7 +37,7 @@
 
                         var isSignedIn = myAuth2.isSignedIn.get();
 
-                        gauth.then(onInit(), onError());
+                        myAuth2.then(onInit(), onError());
                         function onInit() {
                             document.getElementById("signinButton").style.display = isSignedIn ? "none" : "block";
                             document.getElementById("signoutLink").style.display = isSignedIn ? "block" : "none";
